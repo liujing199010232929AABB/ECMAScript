@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04.let和const的特征</title>
+    <script type="text/javascript">
+        // let与const的使用
+        // 变量提升问题（可以在变量申明之前可以使用）
+        // 不允许重复使用
+        // 块级作用域
+        // function diff(){
+        //     var a=1
+        //     const a=22
+        //     console.log(a)
+        // }
+        // diff()
+        function fun(c){
+            {let c
+            console.log(c)}
+        }
+        fun()
+
+        // 暂时性死区
+        var a=123
+        function func(){
+            a='abc'
+            let a
+            console.log(a)
+        }
+        func()
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

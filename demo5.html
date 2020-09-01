@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <title>ES6的解构与赋值</title>
+    <script type="text/javascript">
+        // es5
+        // var a=1
+        // var b=2
+        // es6 模式匹配
+        var [a,b,c]=[1,2,4]
+        console.log(b)
+        console.log(c)
+        //对象的解构与赋值
+        var {num,bos}={num:"123",bo:"abc"}
+        console.log(num)
+
+        var {aa,bb}={aa:'345',bb:'ABC'}
+        console.log(aa)
+        var {aa:bar}={aa:'890',bb:'ABC'}
+        console.log(bar)
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <title>函数的默认参数</title>
+    <script type="text/javascript">
+        // es5中默认值
+        function diff(a,b){
+            b=b||'www.php.cn'
+            console.log(a,b)
+        }
+        diff('hello')
+
+        // es6
+        function func(x,y='www.baidu.cn'){
+            console.log(x,y)
+        }
+        func('您好')
+
+        // 默认参数与解析解构赋值结合使用
+        function str({c,d}={c:3,d:4}){
+            console.log(c,d)
+        }
+        str()
+
+        function str2({e=5,f=6}={}){
+            console.log(e,f)
+        }
+        str2()
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
